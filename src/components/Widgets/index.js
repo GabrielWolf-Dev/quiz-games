@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import db from '../../../db.json';
 
 const Widgets = styled.section`
@@ -8,7 +8,7 @@ const Widgets = styled.section`
     @media screen and (max-width: 600px){
         max-width: 260px;
     }
-`
+`;
 
 Widgets.Widget = styled.div`
     width: 100%;
@@ -47,12 +47,12 @@ Widgets.Header = styled.header`
     background-color: ${db.theme.colors.primary};
     border-top-right-radius: ${db.theme.borderRadius};
     border-top-left-radius: ${db.theme.borderRadius};
-`
+`;
 
 Widgets.Content = styled.div`
     width: 100%;
     padding: 10px 0;
-`
+`;
 
 Widgets.InputsWraper = styled.div`
     width: 100%;
@@ -106,7 +106,7 @@ Widgets.InputsWraper = styled.div`
             font-size: 16px;
         }
     }
-`
+`;
 
 Widgets.OthersQuizzes = styled.div`
     width: 70%;
@@ -134,6 +134,6 @@ Widgets.OthersQuizzes = styled.div`
         margin: 10px auto;
         border-radius: ${db.theme.borderRadius};
     }
-`
+`;
 
-export default Widgets
+export default Widgets;

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import db from '../../../db.json';
 
 const ImgGamer = styled.div`
@@ -15,6 +15,6 @@ const ImgGamer = styled.div`
         height: 100px;
         margin-bottom: 20px;
     }
-`
+`;
 
 export default ImgGamer;

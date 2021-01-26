@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import db from '../../../db.json';
 
 const Header = styled.header`
@@ -6,10 +6,10 @@ const Header = styled.header`
     padding: 20px 2%;
     background-color: ${db.theme.colors.primary};
     color: black;
+    margin-bottom: 40px;
     
     span{
         font-size: 22px;
-        margin-right: 20px;
     }
 
     span a {
@@ -17,6 +17,7 @@ const Header = styled.header`
         font-size: 22px;
         color: white;
         transition: all ease 0.3s;
+        margin-left: 10px;
     }
 
     a:hover {
@@ -29,7 +30,7 @@ const Header = styled.header`
         }
     }
 
-`
+`;
 
 Header.Container = styled.div`
     width: 100%;
@@ -42,5 +43,5 @@ Header.Container = styled.div`
     @media screen and (max-width: 1000px){
         justify-content: center;
     }
-`
+`;
 export default Header;

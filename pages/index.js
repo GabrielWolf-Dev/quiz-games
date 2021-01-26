@@ -1,10 +1,12 @@
-import styled from 'styled-components'
-import db from '../db.json'
-import ImgGamer from '../src/components/BackgroundHome'
-import Widgets from '../src/components/Widgets'
-import Header from '../src/components/Header'
-import IconGitHub from '../src/components/IconGitHub'
-import MetaTags from '../src/components/MetaTags';
+import React from 'react';
+import styled from 'styled-components';
+import { useRouter } from 'next/router';
+import db from '../db.json';
+import ImgGamer from '../src/components/BackgroundHome';
+import Widgets from '../src/components/Widgets';
+import Header from '../src/components/Header';
+import ErrorForm from '../src/components/ErrorForm';
+import IconGitHub from '../src/components/IconGitHub';
 
 const ContainerHome = styled.div`
   width: 100%;
@@ -20,22 +22,59 @@ const ContainerHome = styled.div`
     justify-content: center;
   }
 
-`
+`;
+
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
+
+  function formReq() {
+    router.push(`/quiz?name=${name}`);
+    console.log('request success');
+  }
+
+  function changeInput(e) {
+    console.log(e.target.value);
+    setName(e.target.value);
+  }
+
+  function validation(e) {
+    e.preventDefault();
+    const errorPopUp = document.getElementById('errorPopUp');
+
+    if (name.length === 0) {
+      errorPopUp.style.display = 'flex';
+    } else {
+      errorPopUp.style.display = 'none';
+      formReq();
+    }
+  }
+
+  function closeError() {
+    const errorPopUp = document.getElementById('errorPopUp');
+    errorPopUp.style.display = 'none';
+  }
+
   return (
     <>
-      <MetaTags/>
       <Header>
         <Header.Container>
           <a href="https://www.alura.com.br/">
             <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
           </a>
-          <span>Orgulhosamente criado durante a Imersão React da <a href="https://www.alura.com.br/">Alura</a></span>
+          <span>
+            Orgulhosamente criado durante a Imersão React da
+            <a href="https://www.alura.com.br/">Alura</a>
+          </span>
         </Header.Container>
       </Header>
+      <ErrorForm id="errorPopUp">
+        <p>Por favor, insira o seu nome</p>
+        <i onClick={ closeError } className="fas fa-times" />
+      </ErrorForm>
       <ContainerHome>
-        <ImgGamer/>
+        <ImgGamer />
 
         <Widgets>
           <Widgets.Widget>
@@ -48,30 +87,31 @@ export default function Home() {
             </Widgets.Content>
 
             <Widgets.InputsWraper>
-              <input type="text" placeholder="Insira o seu nome" />
-              <input type="submit" value="Jogar" />
+              <form onSubmit={ validation }>
+                <input onChange={ changeInput } type="text" placeholder="Insira o seu nome" />
+                <input type="submit" value="Jogar" />
+              </form>
             </Widgets.InputsWraper>
           </Widgets.Widget>
-
 
           <Widgets.Widget>
             <h1>Quizzes da galera</h1>
 
             <Widgets.OthersQuizzes>
-              <a href="#">lorem ipsum dolor</a>
+              <a target="_blank" href="https://imersao-react-next-js.nathanaquino.vercel.app/">Assasin's Creed</a>
             </Widgets.OthersQuizzes>
 
             <Widgets.OthersQuizzes>
-              <a href="#">lorem ipsum dolor</a>
+              <a target="_blank" href="https://bladequiz.vercel.app/">Rocket League</a>
             </Widgets.OthersQuizzes>
-            
+
             <Widgets.OthersQuizzes>
-              <a href="#">lorem ipsum dolor</a>
+              <a target="_blank" href="#">lorem ipsum dolor</a>
             </Widgets.OthersQuizzes>
           </Widgets.Widget>
         </Widgets>
       </ContainerHome>
       <IconGitHub projectUrl="https://github.com/GabrielWolf-Dev" />
     </>
-  )
+  );
 }
