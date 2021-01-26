@@ -40,6 +40,7 @@ export default function App({ Component, pageProps }) {
         <meta property="twitter:image" content="https://cdn.pixabay.com/photo/2018/09/05/06/19/signal-3655575_960_720.png" />
 
         <title>Games Quiz</title>
+        <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2016/10/30/23/05/controller-1784573_960_720.png" />
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossOrigin="anonymous" />
       </Head>
