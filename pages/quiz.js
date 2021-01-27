@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
-import PropTypes, { func } from 'prop-types';
 import db from '../db.json';
 
 import Widgets from '../src/components/Widgets';
@@ -103,7 +102,7 @@ export default function Quiz() {
 
   function handleSubmit() {
     const nextQuestion = questionIndex + 1;
-    if (nextQuestion <= totalQuestions) {
+    if (nextQuestion < totalQuestions) {
       setCurrentQuestion(nextQuestion);
     } else {
       setScreenState(screenStates.RESULT);

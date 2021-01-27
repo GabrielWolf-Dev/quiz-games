@@ -88,10 +88,12 @@ export default function Home() {
               <p>{db.description}</p>
             </Widgets.Content>
 
-            <Widgets.Form onSubmit={validation}>
-              <Input onChange={changeInput} />
-              <Submit value="Jogar" />
-            </Widgets.Form>
+            <Widgets.InputWraper>
+              <form  onSubmit={validation}>
+                <Input onChange={changeInput} />
+                <Submit value="Jogar" />
+              </form>
+            </Widgets.InputWraper>
           </Widgets.Widget>
 
           <Widgets.Widget>
