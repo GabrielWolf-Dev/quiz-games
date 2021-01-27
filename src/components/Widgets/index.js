@@ -51,61 +51,15 @@ Widgets.Header = styled.header`
 
 Widgets.Content = styled.div`
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 2%;
 `;
 
-Widgets.InputsWraper = styled.div`
+Widgets.InputWraper = styled.div`
     width: 100%;
     padding: 15px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    input[type='text'] {
-        width: 100%;
-        max-width: 200px;
-        height: 45px;
-        font-size: 18px;
-        text-align: left;
-        border: 2px solid ${db.theme.colors.mainBg};
-        border-radius: ${db.theme.borderRadius};
-        padding: 10px;
-        margin: 10px 0;
-    }
-
-    input[type='submit'] {
-        width: 100%;
-        max-width: 150px;
-        height: 45px;
-        font-size: 18px;
-        color: white;
-        background-color: ${db.theme.colors.secondary};
-        border: 0;
-        border-radius: ${db.theme.borderRadius};
-        cursor: pointer;
-        transition: all ease 0.3s;
-    }
-
-    input[type='submit']:hover{
-        opacity: 0.8;
-    } 
-
-    @media screen and (max-width: 600px){
-        input[type='text'] {
-            width: 100%;
-            max-width: 150px;
-            height: 45px;
-            margin: 0 0 10px 0;
-            font-size: 14px;
-        }
-
-        input[type='submit'] {
-            width: 100%;
-            max-width: 120px;
-            height: 45px;
-            font-size: 16px;
-        }
-    }
 `;
 
 Widgets.OthersQuizzes = styled.div`
@@ -133,6 +87,24 @@ Widgets.OthersQuizzes = styled.div`
         color: white;
         margin: 10px auto;
         border-radius: ${db.theme.borderRadius};
+    }
+`;
+
+Widgets.Topic = styled.a`
+    outline: 0;
+    text-decoration: none;
+    color: white;
+    background-color: ${db.theme.colors.mainBg};
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: ${({ theme }) => theme.borderRadius};
+    transition: .3s;
+    display: block;
+    
+    &:hover,
+    &:focus {
+        opacity: .5;
     }
 `;
 

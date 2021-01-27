@@ -2,11 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
 import db from '../db.json';
-import ImgGamer from '../src/components/BackgroundHome';
+
+import ImgGamer from '../src/components/ImgGamer';
 import Widgets from '../src/components/Widgets';
 import Header from '../src/components/Header';
 import ErrorForm from '../src/components/ErrorForm';
 import IconGitHub from '../src/components/IconGitHub';
+import Input from '../src/components/Input';
+import Submit from '../src/components/Submit';
 
 const ContainerHome = styled.div`
   width: 100%;
@@ -86,12 +89,10 @@ export default function Home() {
               <p>{db.description}</p>
             </Widgets.Content>
 
-            <Widgets.InputsWraper>
-              <form onSubmit={ validation }>
-                <input onChange={ changeInput } type="text" placeholder="Insira o seu nome" />
-                <input type="submit" value="Jogar" />
-              </form>
-            </Widgets.InputsWraper>
+            <Widgets.Form onSubmit={ validation }>
+                <Input onChange={ changeInput } />
+                <Submit value="Jogar" />
+            </Widgets.Form>
           </Widgets.Widget>
 
           <Widgets.Widget>
@@ -106,7 +107,7 @@ export default function Home() {
             </Widgets.OthersQuizzes>
 
             <Widgets.OthersQuizzes>
-              <a target="_blank" href="#">lorem ipsum dolor</a>
+              <a target="_blank" href="https://wowquizz-alura.vercel.app/">World of WarCraft</a>
             </Widgets.OthersQuizzes>
           </Widgets.Widget>
         </Widgets>

@@ -3,8 +3,8 @@ import db from '../../../db.json';
 
 const ImgGamer = styled.div`
     width: 100%;
-    max-width: 500px;
-    height: 400px;
+    max-width: 400px;
+    height: 300px;
     background-image: url('${db.bg}');
     background-position: center;
     background-repeat: no-repeat;
