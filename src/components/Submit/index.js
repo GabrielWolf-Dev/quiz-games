@@ -1,6 +1,6 @@
 import React from 'react';
-import db from '../../../db.json';
 import styled from 'styled-components';
+import db from '../../../db.json';
 
 const InputSubmit = styled.input`
     width: 100%;
@@ -26,10 +26,10 @@ const InputSubmit = styled.input`
     }
 `;
 
-export default function Submit(props){
-    return(
-        <>
-            <InputSubmit type="submit" value={ props.value } />
-        </>
-    );
+export default function Submit(props) {
+  return (
+    <>
+      <InputSubmit type="submit" value={props.value} />
+    </>
+  );
 }

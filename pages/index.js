@@ -27,7 +27,6 @@ const ContainerHome = styled.div`
 
 `;
 
-
 export default function Home() {
   const router = useRouter();
   const [name, setName] = React.useState('');
@@ -74,7 +73,7 @@ export default function Home() {
       </Header>
       <ErrorForm id="errorPopUp">
         <p>Por favor, insira o seu nome</p>
-        <i onClick={ closeError } className="fas fa-times" />
+        <i onClick={closeError} className="fas fa-times" />
       </ErrorForm>
       <ContainerHome>
         <ImgGamer />
@@ -89,9 +88,9 @@ export default function Home() {
               <p>{db.description}</p>
             </Widgets.Content>
 
-            <Widgets.Form onSubmit={ validation }>
-                <Input onChange={ changeInput } />
-                <Submit value="Jogar" />
+            <Widgets.Form onSubmit={validation}>
+              <Input onChange={changeInput} />
+              <Submit value="Jogar" />
             </Widgets.Form>
           </Widgets.Widget>
 

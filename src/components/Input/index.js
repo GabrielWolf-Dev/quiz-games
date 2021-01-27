@@ -1,7 +1,7 @@
 import React from 'react';
-import db from '../../../db.json';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import db from '../../../db.json';
 
 const InputName = styled.input`
     width: 100%;
@@ -23,14 +23,14 @@ const InputName = styled.input`
     }
 `;
 
-export default function Input({ onChange }){
-    return(
-        <>
-            <InputName onChange= { onChange } type="text" placeholder="Insira o seu nome" />
-        </>
-    );
+export default function Input({ onChange }) {
+  return (
+    <>
+      <InputName onChange={onChange} type="text" placeholder="Insira o seu nome" />
+    </>
+  );
 }
 
 Input.propTypes = {
-    onChange: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
