@@ -4,25 +4,123 @@
   "description": "Teste o seus conhecimentos sobre vários acontecimentos que ocorreu no mundo dos games!",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "image": "https://images.unsplash.com/photo-1597840900578-2c0798e868c3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=925&q=80",
+      "title": "Categoria: Trilogia Sonic",
+      "description": "Qual é o jogo mais criticado pela franquia?",
+      "answer": 1,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Sonic Boom",
+        "Sonic the Hedgehog (2004)",
+        "Sonic Free Riders",
+        "Sonic Unleashed"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://images.unsplash.com/photo-1550340733-4c0bdcfe1187?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "title": "Categoria: Video-Games",
+      "description": "Qual foi a data de lançamento do PS2?",
+      "answer": 1,
+      "alternatives": [
+         "3 de março de 2000",
+         "4 de março de 2000",
+         "10 de fevereiro de 2001",
+         "4 de março de 1999"
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1606318801954-d46d46d3360a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "title": "Categoria: Lançamentos 2020",
+      "description": "Qual foi o jogo mais bugado em 2020?",
+      "answer": 3,
+      "alternatives": [
+         "Cyberbug 2077",
+         "Demon's Souls",
+         "Avengers",
+         "Cyberpunk 2077"
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1550855909-f317fdd57f5a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "title": "Categoria: História do Forza",
+      "description": "Qual foi o primeiro game da franquia Forza?(incluindo Motorsport e Horizon)",
+      "answer": 3,
+      "alternatives": [
+         "Forza Horizon",
+         "Forza Motorsport 2",
+         "Forza Horizon 4",
+         "Forza Motorsport"
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1560253023-3ec5d502959f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "title": "Categoria: Cs:Go",
+      "description": "Quem foi o melhor jogador brasileiro no ano de 2016/2017?",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Coldzera",
+         "Fenix",
+         "Fallen",
+         "TACO"
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1504450758481-7338eba7524a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1349&q=80",
+      "title": "Categoria: Cs:Go",
+      "description": "Quem foi o maior jogador da história no Brasil?",
+      "answer": 2,
+      "alternatives": [
+         "Coldzera",
+         "Fenix",
+         "Fallen",
+         "TACO"
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "title": "Categoria: Trilogia GTA",
+      "description": "Qual foi o primeiro jogo em 3ª pessoa no GTA?",
+      "answer": 2,
+      "alternatives": [
+         "GTA Vice City",
+         "GTA Libert City Stories",
+         "GTA 3",
+         "GTA 2"
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1556537570-231ead2a4009?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1266&q=80",
+      "title": "Categoria: Resident Evil 4",
+      "description": "Qual é o maior pesadelo do Leon?",
+      "answer": 2,
+      "alternatives": [
+         "Las Plagas",
+         "Bitores Méndez",
+         "Ashley",
+         "Lord Saddler"
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1610211808154-aa1a349b8aa4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1338&q=80",
+      "title": "Categoria: Xbox One",
+      "description": "Quantos modelos foram lançados do Xbox One?",
+      "answer": 0,
+      "alternatives": [
+         "4",
+         "2",
+         "3",
+         "1"
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1544652478-6653e09f18a2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "title": "Categoria: League of Legends",
+      "description": "Qual é o campeão mais fácil e roubado de se jogar?",
+      "answer": 2,
+      "alternatives": [
+         "Yasuo",
+         "Katarina",
+         "Master Yi",
+         "Xin Zhao"
       ]
     }
   ],

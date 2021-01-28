@@ -40,6 +40,7 @@ function QuestionWidget({
         <Widgets.Header>
           <h1>
             Pergunta de
+            {' '}
             {questionIndex + 1}
             {' '}
             a
@@ -50,7 +51,7 @@ function QuestionWidget({
           src={questions.image}
           style={{
             width: '100%',
-            height: '150px',
+            height: '250px',
           }}
         />
         <Widgets.Content>
