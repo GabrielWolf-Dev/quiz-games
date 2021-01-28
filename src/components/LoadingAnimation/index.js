@@ -13,9 +13,19 @@ const LoadingAnimation = styled.div`
     animation: rotating 1s infinite;
 
     @keyframes rotating {
-    to{
-        transform: rotate(1turn);
+        to{
+            transform: rotate(1turn);
+        }
     }
+
+    @media screen and (max-width: 1000px){
+        max-width: 200px;
+        height: 200px;
+    }
+
+    @media screen and (max-width: 600px){
+        max-width: 150px;
+        height: 150px;
     }
 `;
 

@@ -14,9 +14,14 @@ const InputSubmit = styled.input`
     cursor: pointer;
     transition: all ease 0.3s;
 
-    :hover{
+    &:hover{
         opacity: 0.8;
-    } 
+    }
+
+  &:disabled {
+    background-color: #979797;
+    cursor: not-allowed;
+  }
 
     @media screen and (max-width: 600px){
         width: 100%;
@@ -29,7 +34,7 @@ const InputSubmit = styled.input`
 export default function Submit(props) {
   return (
     <>
-      <InputSubmit type="submit" value={props.value} />
+      <InputSubmit type="submit" disabled={props.disabled} value={props.value} />
     </>
   );
 }

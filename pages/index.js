@@ -89,7 +89,7 @@ export default function Home() {
             </Widgets.Content>
 
             <Widgets.InputWraper>
-              <form  onSubmit={validation}>
+              <form onSubmit={validation}>
                 <Input onChange={changeInput} />
                 <Submit value="Jogar" />
               </form>
@@ -100,15 +100,15 @@ export default function Home() {
             <h1>Quizzes da galera</h1>
 
             <Widgets.OthersQuizzes>
-              <a target="_blank" href="https://imersao-react-next-js.nathanaquino.vercel.app/">Assasin's Creed</a>
+              <a target="_blank" href={db.external[0]}>Assasin's Creed</a>
             </Widgets.OthersQuizzes>
 
             <Widgets.OthersQuizzes>
-              <a target="_blank" href="https://bladequiz.vercel.app/">Rocket League</a>
+              <a target="_blank" href={db.external[1]}>Rocket League</a>
             </Widgets.OthersQuizzes>
 
             <Widgets.OthersQuizzes>
-              <a target="_blank" href="https://wowquizz-alura.vercel.app/">World of WarCraft</a>
+              <a target="_blank" href={db.external[2]}>World of WarCraft</a>
             </Widgets.OthersQuizzes>
           </Widgets.Widget>
         </Widgets>

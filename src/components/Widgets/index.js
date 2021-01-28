@@ -3,10 +3,10 @@ import db from '../../../db.json';
 
 const Widgets = styled.section`
     width: 100%;
-    max-width: 380px;
+    max-width: 450px;
 
     @media screen and (max-width: 600px){
-        max-width: 260px;
+        max-width: 320px;
     }
 `;
 
@@ -52,6 +52,29 @@ Widgets.Header = styled.header`
 Widgets.Content = styled.div`
     width: 100%;
     padding: 10px 2%;
+
+    h2{
+        font-size: 20px;
+        padding: 10px 2%;
+        text-align: center;
+        color: ${db.theme.colors.contrastText};
+    }
+
+    p{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    ul{
+        list-style-type: none;
+        list-style-position: inside;
+    }
+
+    ul li {
+        font-size: 18px;
+        text-align: left;
+        padding: 5px 4%;
+    }
 `;
 
 Widgets.InputWraper = styled.div`
@@ -95,7 +118,7 @@ Widgets.Topic = styled.a`
     text-decoration: none;
     color: white;
     background-color: ${db.theme.colors.mainBg};
-    padding: 10px 15px;
+    padding: 5% 2%;
     margin-bottom: 8px;
     cursor: pointer;
     border-radius: ${({ theme }) => theme.borderRadius};
@@ -106,6 +129,18 @@ Widgets.Topic = styled.a`
     &:focus {
         opacity: .5;
     }
+`;
+
+Widgets.Alternatives = styled.div`
+    width: 100%;
+    max-width: 140px;
+    padding: 4%;
+`;
+
+Widgets.ResultMessage = styled.p`
+    width: auto;
+    font-weight: bold;
+    text-align: center;
 `;
 
 export default Widgets;
