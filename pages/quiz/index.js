@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
-import db from '../db.json';
+import db from '../../db.json';
+import { motion } from 'framer-motion';
 
-import Widgets from '../src/components/Widgets';
-import ImgGamer from '../src/components/ImgGamer';
-import Submit from '../src/components/Submit';
-import LoadingAnimation from '../src/components/LoadingAnimation';
-import Form from '../src/components/Form';
+import Widgets from '../../src/components/Widgets';
+import ImgGamer from '../../src/components/ImgGamer';
+import Submit from '../../src/components/Submit';
+import LoadingAnimation from '../../src/components/LoadingAnimation';
+import Form from '../../src/components/Form';
+import BackLinkArrow from '../../src/components/BackLinkArrow';
 
 const QuizContainer = styled.div`
     width: 100%;
@@ -31,7 +33,19 @@ function ResultWidget({ results }) {
 
   return (
     <Widgets>
-      <Widgets.Widget>
+      <Widgets.Widget
+        as={motion.section}
+        variants={{
+          show: {scale: 1},
+          hidden: {scale: 0}
+        }}
+        transition= {{
+          delay: 0.3,
+          duration: 0.5
+        }}
+        initial="hidden"
+        animate="show"
+      >
         <Widgets.Header>
           <h1>
             Resultado de
@@ -102,8 +116,21 @@ function QuestionWidget({
 
   return (
     <Widgets>
-      <Widgets.Widget>
+      <Widgets.Widget
+        as={motion.section}
+        variants={{
+          show: {scale: 1},
+          hidden: {scale: 0}
+        }}
+        transition= {{
+          delay: 0.3,
+          duration: 0.5
+        }}
+        initial="hidden"
+        animate="show"
+      >
         <Widgets.Header>
+        <BackLinkArrow href="/" />
           <h1>
             Pergunta de
             {' '}

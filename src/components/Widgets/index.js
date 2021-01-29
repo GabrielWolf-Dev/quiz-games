@@ -143,4 +143,8 @@ Widgets.ResultMessage = styled.p`
     text-align: center;
 `;
 
+Widgets.LinkNext = styled.a`
+    color: white;
+`;
+
 export default Widgets;

@@ -126,8 +126,10 @@
   ],
   "external": [
     "https://imersao-react-next-js.nathanaquino.vercel.app/",
-    "https://bladequiz.vercel.app/",
-    "https://wowquizz-alura.vercel.app/"
+    "https://bladequiz.guilhermesantoss.vercel.app/",
+    "https://wowquizz-alura.vercel.app/",
+    "https://darksouls-quiz.gui-leandro.vercel.app/",
+    "https://miziaraquiz.thiagonmiziara.vercel.app/"
   ],
   "theme": {
     "colors": {
