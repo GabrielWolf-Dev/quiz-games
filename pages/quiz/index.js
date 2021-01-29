@@ -47,6 +47,7 @@ function ResultWidget({ results }) {
         animate="show"
       >
         <Widgets.Header>
+          <BackLinkArrow href="/" />
           <h1>
             Resultado de
             {' '}

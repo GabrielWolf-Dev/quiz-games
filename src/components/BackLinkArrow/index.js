@@ -14,6 +14,10 @@ const StyledLink = styled(Link)`
   &:hover {
     opacity: .5;
   }
+
+  @media screen and (max-width: 600px){
+    padding: 2%;
+  }
 `;
 
 const SVG = styled.svg`

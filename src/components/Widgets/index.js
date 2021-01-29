@@ -6,7 +6,8 @@ const Widgets = styled.section`
     max-width: 450px;
 
     @media screen and (max-width: 600px){
-        max-width: 320px;
+        max-width: 400px;
+        padding:0 2%;
     }
 `;
 

@@ -43,6 +43,7 @@ function ResultWidget({ results, externalTheme }) {
         animate="show"
       >
         <Widgets.Header>
+          <BackLinkArrow href="/" />
           <h1>
             Resultado:
           </h1>
