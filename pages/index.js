@@ -160,9 +160,7 @@ export default function Home() {
 
             {db.external.map((externalUrl, index) => {
               const [projectName, gitHubUser, otherName] = externalUrl
-              .replace(/\//g, '')
-              .replace('https:', '')
-              .replace('.vercel.app', '')
+              .replace(/\/|https:|.vercel.app/g, '')
               .split('.');
 
               return(
