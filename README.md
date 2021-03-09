@@ -1,6 +1,10 @@
 # [Quiz Games](https://quiz-games-gabrielwolf-dev.vercel.app/)
 ## A Project realized in the imersion Alura React Js
 
+## Images:
+![Home](https://github.com/GabrielWolf-Dev/quiz-games/blob/main/assets/imgReadme/Home.png)
+![Quiz](https://github.com/GabrielWolf-Dev/quiz-games/blob/main/assets/imgReadme/Quiz.png)
+
 ### Objective:
 Have an experience with the event, where I've learned a lot about the ecosystem React Js and Next.Js together with the community.
 
@@ -25,3 +29,8 @@ Was worked a lot the alteration of the states the components in the application.
 - [x] To make the questions;
 - [x] To make animations;
 - [x] To make the "db.json".
+
+## Others Images:
+
+![Quiz Friend](https://github.com/GabrielWolf-Dev/quiz-games/blob/main/assets/imgReadme/QuizFriend.png)
+![Quiz Result](https://github.com/GabrielWolf-Dev/quiz-games/blob/main/assets/imgReadme/QuizResult.png)
